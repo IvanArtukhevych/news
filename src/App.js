@@ -1,23 +1,65 @@
-import logo from './logo.svg';
-import './App.css';
+import New from "./components/New";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <div className="nav_left">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Twitter-logo.svg"></img>
+
+          <div className="nav_cont">
+            <div className="nav_el"><input type='button' value='Home'></input></div>
+            <div className="nav_el"><input type='button' value='Blog'></input></div>
+            <div className="nav_el"><input type='button' value='News'></input></div>
+            <div className="nav_el"><input type='button' value='Trending'></input></div>
+            <div className="nav_el"><input type='button' value='About'></input></div>
+
+          </div>
+        </div>
+
+        <div className="head_right">
+          <img src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-21.png"></img>
+          <div className="burger_mnu"></div>
+        </div>
       </header>
+
+      <main>
+        <aside className="as_left">
+          <h1>Hot News</h1>
+          <div className="hot_new">
+            <p className="data">data</p>
+            <h3>title of new</h3>
+            <img></img>
+            <p className="desk">desk</p>
+            <a className="read_more">read more</a>
+          </div>
+        </aside>
+
+        <aside className="as_right">
+          <div className="news_list_top">
+            <h1>lastest news</h1>
+          </div>
+
+          <div className="news_list">
+            <New/>
+            <New/>
+            <New/>
+            <New/>
+            <New/>
+
+            
+          </div>
+
+          <div className="news_list_btm">
+            <h1>subscribe our newspaper</h1>
+            <div className="email_form">
+              <input type='text' placeholder="your email"></input>
+              <button className="email_form_btn">submit</button>
+            </div>
+            
+          </div>
+        </aside>
+      </main>
     </div>
   );
 }
