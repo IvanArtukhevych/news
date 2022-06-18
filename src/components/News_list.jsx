@@ -45,7 +45,7 @@ export default class News_list extends Component {
 
                         <div className="new">
                             <div className="new_data">
-                                <p className="data" key={item.dta}>{item.published_at.split('')}</p>
+                                <p className="data" key={item.dta}>{item.published_at}</p>
                                 <h3 key={item.tit}>{item.title}</h3>
                                 <p className="desk" key={item.desk}>{item.description}</p>
                                 <a className="read_more" key={item.sylka} href={item.url}>read more</a>
