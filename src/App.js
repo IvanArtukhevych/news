@@ -1,4 +1,4 @@
-import New from "./components/New";
+import News_list from "./components/News_list";
 
 function App() {
   return (
@@ -40,15 +40,7 @@ function App() {
             <h1>lastest news</h1>
           </div>
 
-          <div className="news_list">
-            <New/>
-            <New/>
-            <New/>
-            <New/>
-            <New/>
-
-            
-          </div>
+          <News_list/>
 
           <div className="news_list_btm">
             <h1>subscribe our newspaper</h1>
