@@ -1,4 +1,5 @@
 import News_list from "./components/News_list";
+import Newslist from "./components/Newslist";
 
 function App() {
   return (
@@ -40,7 +41,7 @@ function App() {
             <h1>lastest news</h1>
           </div>
 
-          <News_list/>
+          <Newslist title='pines'/>
 
           <div className="news_list_btm">
             <h1>subscribe our newspaper</h1>
